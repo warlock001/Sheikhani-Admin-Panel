@@ -1,0 +1,145 @@
+.loginScreen {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  background-image: url("../images/login-background.png");
+}
+
+.loginContainer {
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.heading-primary {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.heading-secondary {
+  font-size: 40px;
+  margin: 0 10px;
+}
+.input {
+  color: #000;
+}
+
+.inputFeild {
+  margin-bottom: 20px !important;
+  width: 400px;
+}
+
+.inputFeild:-webkit-autofill {
+  margin-bottom: 20px !important;
+  width: 400px;
+  background: transparent;
+}
+
+.MuiInputBase-input:-webkit-autofill {
+  animation-name: mui-auto-fill;
+  animation-duration: 9999s !important;
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: -internal-light-dark(
+    rgb(232, 240, 254),
+    rgba(70, 90, 126, 0.4)
+  ) !important;
+  color: fieldtext !important;
+}
+
+.loginLogo {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.submitContainer {
+  width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .loginContainer {
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    background: 0.6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  .loginLogo {
+    width: 270px;
+    margin: 0 auto;
+  }
+
+  .inputFeild {
+    margin-bottom: 20px !important;
+    width: 270px;
+    background: #fff;
+  }
+
+  .submitContainer {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .loginContainer {
+    width: 250px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    background: 0.6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  .heading-secondary {
+    font-size: 40px;
+    margin: 0 10px;
+  }
+
+  .heading-primary {
+    font-size: 16px;
+  }
+
+  .loginLogo {
+    width: 270px;
+    margin: 0 auto;
+  }
+
+  .inputFeild {
+    margin-bottom: 20px !important;
+    width: 270px;
+    background: #fff;
+  }
+
+  .submitContainer {
+    width: 270px;
+  }
+}

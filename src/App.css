@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,11 +32,267 @@
   color: #61dafb;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 100px);
+}
+.headerLinks {
+  margin: 0;
+  padding: 0 20px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topHeaderLink {
+  padding-bottom: 50px;
+}
+
+.headerLinksCentered {
+  margin: 0 auto !important;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background-color: #1a1c1e;
+  padding: 50px 0;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: start;
+  padding-top: 50px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.body {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  /* background: url('./images/AromaLinesBrandBook_infuseLove-1.png'); */
+}
+
+.body::before {
+  content: "";
+  background: url("./images/AromaLinesBrandBook_infuseLove-1.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+.headerLinks > li {
+  padding: 10px 20px !important;
+  padding: 10px 0px;
+  list-style: none;
+}
+
+.headerLinks > div > li {
+  padding: 10px 20px !important;
+  padding: 10px 0px;
+  list-style: none;
+}
+
+.headerLinks > div > li > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #b5b7bf;
+  font-size: 18px;
+}
+
+.headerLinks > div > p {
+  padding: 0px 20px !important;
+  color: #b5b7bf;
+  font-size: 12px;
+}
+
+.headerLinksActive {
+  border-radius: 15px;
+  list-style: none;
+  background-color: #313334;
+}
+
+.headerLinksActive > a {
+  color: #fff !important;
+  border-radius: 15px;
+  list-style: none;
+  background-color: #313334;
+}
+
+.headerLinks > div > li > a:hover {
+  color: #fff;
+  font-size: 18px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: #282c34 !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #282c34 !important;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(25, 118, 210, 0.04);
+  border: 1px solid rgba(0, 0, 0, 1) !important;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+  color: #000 !important;
+}
+
+.primaryBTN {
+  padding: 10px 20px;
+  background-color: #0060ff;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 7px;
+}
+
+.dismissBTN {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 7px;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  background-color: #fec148 !important;
+}
+
+.css-1lymaxv-MuiDataGrid-root {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.primaryBTN:hover {
+  padding: 10px 20px;
+  background-color: #0a7cff;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.font-face-gm {
+  font-family: "Avenir Next LTPro Regular";
+}
+
+.font-face-gm-secondary {
+  font-family: "Goldney Slanted";
+}
+
+.css-1lymaxv-MuiDataGrid-root,
+.css-rtrcn9-MuiTablePagination-root,
+.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon,
+.css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root,
+.css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+  color: #000 !important;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+  color: #000 !important;
+}
+
+.screen-root-div {
+  max-width: 1440px;
+  margin: auto;
+  padding: 50px 30px;
+}
+
+.toolbarBTNGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1a1c1e;
+    padding: 50px 0;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    position: relative;
+    transition: all 0.5s ease-out;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .toolbar {
+    flex-direction: column;
+  }
+
+  .toolbarInside {
+    flex-direction: column !important;
+  }
+
+  .toolbarInsideReverse {
+    flex-direction: column-reverse !important;
+  }
+
+  .mobileFullWidthBTN {
+    width: 100%;
+  }
+
+  .toolbarBTNGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .marginBottom {
+    margin-bottom: 25px !important;
+  }
+
+  .toolbarBTNGroupColumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .InputGroup {
+    display: contents !important;
   }
 }
